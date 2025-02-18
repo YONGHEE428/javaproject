@@ -19,9 +19,9 @@ public class KeyBoardIn_12 {
 		city = sc.nextLine();
 		
 		System.out.print("나이를 입력하세요===> ");
-		age = Integer.parseInt(sc.nextLine());
+		age = sc.nextInt();
 		
-		System.out.print("직업을 입력하세요========> ");
+		System.out.println("직업을 입력하세요========> ");
 		work = sc.nextLine();
 		
 		System.out.println("==========================");
