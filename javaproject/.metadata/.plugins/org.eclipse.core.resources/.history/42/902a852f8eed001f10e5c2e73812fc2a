@@ -1,0 +1,15 @@
+package day0218;
+
+import java.util.Iterator;
+
+public class VariableTest_01 {
+
+	public static void main(String[] args) {
+		
+		int a=1;
+		
+		System.out.println(a+1);
+
+	}
+
+}

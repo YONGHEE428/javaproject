@@ -1,0 +1,19 @@
+package day0218;
+
+public class QuizParseArgs_08 {
+
+	public static void main(String[] a) {
+		// 메인 파라메타 값으로 3과목의 점수를 읽어서 총점과 평균(소수점2자리)을 출력 
+		
+		double java = Double.parseDouble(a[0]);
+		double oracle =Double.parseDouble(a[1]);
+		double html = Double.parseDouble(a[2]);
+		
+		int tot = (int) (java + oracle + html);
+		double avg = tot / 3;
+	
+		System.out.printf("3과목의 점수는 각각 %f, %f, %f이며\n총점은 %d 이고, 평균은 %.2f이다. ",java, oracle, html, tot, avg );
+		
+	}
+
+}

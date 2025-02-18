@@ -1,0 +1,20 @@
+package day0218;
+
+public class ex {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		int a = 200;
+		int b = 100;
+		String name = "박용희";
+		
+		
+		
+		System.out.println("나는" + name + "이다.");
+		
+		//나는 OOO이다.
+	}
+
+}

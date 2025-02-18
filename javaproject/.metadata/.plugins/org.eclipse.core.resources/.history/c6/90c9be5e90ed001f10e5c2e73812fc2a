@@ -1,0 +1,13 @@
+package day0218;
+
+public class ParseVar_02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String a = "5";
+		
+		
+	}
+
+}

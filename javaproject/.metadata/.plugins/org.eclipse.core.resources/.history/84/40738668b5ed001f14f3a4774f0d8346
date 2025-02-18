@@ -1,0 +1,19 @@
+package day0218;
+
+public class ex {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		int a = 200;
+		int b = 100;
+		
+		
+		
+		System.out.print("a + b = " + (a+b)+"\n");   //a+b = 300a-b = 100
+		System.out.println("a - b = " + (a-b));
+		System.out.printf("a x b = %d",300);
+	}
+
+}
