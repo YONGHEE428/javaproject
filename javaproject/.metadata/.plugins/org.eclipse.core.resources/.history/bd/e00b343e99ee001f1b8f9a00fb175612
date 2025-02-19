@@ -1,0 +1,31 @@
+package day0219;
+
+import java.util.Scanner;
+
+public class Quiz0219_13 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		String name;
+		int count, amount, tot;
+		
+		System.out.print("입고된 상품명은?  ");
+		name = sc.nextLine();
+		System.out.print("수량은?  ");
+		count = Integer.parseInt(sc.nextLine());
+		System.out.print("단가는?  ");
+		amount = Integer.parseInt(sc.nextLine());
+		
+		if (count >= 5)
+			tot =(int)(count*amount*0.9);
+		
+		System.out.println("=============================");
+		System.out.printf("%s %d개는 총 %d원 입니다.\n", name, count, amount);
+		System.out.println("(단 5개 이상은 10프로 DC됩니다.");
+		System.out.println("=============================");
+		System.out.println("dc된 최종금액 : " + tot + "원 입니다.");
+		
+	}
+}
