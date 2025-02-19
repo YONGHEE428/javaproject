@@ -11,7 +11,6 @@ public class QuizLast_13 {
 		Scanner sc = new Scanner(System.in);
 		Calendar cal = Calendar.getInstance();
 		
-		
 		String name, job;
 		int birth, age;
 		
@@ -29,8 +28,8 @@ public class QuizLast_13 {
 		
 		age = now - birth;
 		
-		System.out.println("=====================================");
-		System.out.printf("%s님은 %d생이며 %d세입니다. 직업은 %s입니다.",name, birth,age,job );
+		System.out.println("========================================");
+		System.out.printf("%s님은 %d생이며 %d세입니다. 직업은 %s입니다.",name, birth,age, job );
 	}
 
 }
