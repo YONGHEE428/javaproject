@@ -1,29 +1,31 @@
 package day0219;
 
-import java.util.Scanner;
-
 public class IfTest_07 {
 
 	public static void main(String[] args) {
 		
-		Scanner sc = new Scanner(System.in);
+		int n=3;
 		
-		int n;
+		if(n<5) //조건이 맞으면 {}안을 혹은 아래한줄을 실행후 빠져나간다
+			System.out.println("n은 5보다 큽니다");
 		
-		System.out.print("점수를 입력하시오 : ");
-		n = Integer.parseInt(sc.nextLine());
+		System.out.println("프로그램 종료");
 		
-			if (n>=90) {
-				System.out.println("1급 입니다.(점수 : " + n + "점)");
-			} else if (n >= 75){
-				System.out.println("2급 입니다.(점수 : " + n + "점)");
-			} else if (n >= 50) {
-				System.out.println("3급 입니다.(점수 : " + n + "점)");
-			} else {
-				System.out.println("탈락 입니다.(점수 : " + n + "점)");
-			}
-			
+		/////////////////////////////////
+		int a=10;
 		
+		if(a%2==1) { //조건이 2개일경우는 하나의 조건만 만들고 else를 이용하여 나머지값을 구한다
+			System.out.println("a는 홀수입니다");
+		    System.out.println("홀수야");
+		}
+		else {
+			System.out.println("a는 짝수입니다");
+			System.out.println("짝수야");
+		}
+		
+		
+		
+
 	}
-	
+
 }

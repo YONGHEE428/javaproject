@@ -5,30 +5,31 @@ import java.util.Scanner;
 public class KeyBoardIn_12 {
 
 	public static void main(String[] args) {
-		// Scannersms I문장ㄹ이나 숫자를 모두 키보드로 입력받을때 생성
+		// Scanner는 문자열이나 숫자를 모두 키보드로 입력받을때 생성
+
+		Scanner sc=new Scanner(System.in);
 		
-		Scanner sc = new Scanner(System.in);
-		
-		String name, city, work;
+		//변수선언
+		String name,city,job;  //이름,지역
 		int age;
 		
-		System.out.print("이름을 입력해 보세요===> ");
-		name = sc.nextLine();
+		//입력할멘트
+		System.out.print("이름을 입력해 보세요===>");
+		name=sc.nextLine();
+		System.out.print("사는 지역은 어디입니까?==>");
+		city=sc.nextLine();
+		System.out.print("당신의 나이는 몇살==>");
+		//age=sc.nextInt(); 숫자입력후 엔터누르면 그엔터가 버퍼로 저장되어 다음문장읽을때 먼저읽어버리므로 형변환
+		age=Integer.parseInt(sc.nextLine());
 		
-		System.out.print("사는 곳을 입력하세요===> ");
-		city = sc.nextLine();
+		System.out.print("당신의 직업은==>");
+		job=sc.nextLine();
 		
-		System.out.print("나이를 입력하세요===> ");
-		age = Integer.parseInt(sc.nextLine());
-		
-		System.out.print("직업을 입력하세요========> ");
-		work = sc.nextLine();
-		
-		System.out.println("==========================");
-		System.out.println("이름 : " + name);
-		System.out.println("사는 곳 : " + city);
-		System.out.println("나이 : " + age + "살");
-		System.out.println("직업 : " + work + "입니다.");
+		//출력
+		System.out.println("내이름은"+name+"입니다");
+		System.out.println("사는 지역은 "+city+"입니다");
+		System.out.println("나이는"+age+"세 입니다");
+		System.out.println("나의 직업은"+job+"입니다");
 		
 	}
 

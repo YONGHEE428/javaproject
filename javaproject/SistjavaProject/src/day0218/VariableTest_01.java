@@ -1,30 +1,29 @@
 package day0218;
 
-import java.util.Iterator;
-
 public class VariableTest_01 {
 
 	public static void main(String[] args) {
+		// 변수선언
+		//10진수 정수의 저장을 위해서 메모리공간을 할당하겠다
+		//그 메모리 공간의 이름을 num이라고 하겠다
+		int num1;
+		num1=10;
 		
-		int a=100;
-		int b = 200;
-		int c = a + b;
+		int num2=20;
+		int num3=num1+num2;
 		
-		System.out.println(a + "+" + b + "=" + c);
+		System.out.println(num1+"+"+num2+"="+num3);
 		
-		String d = "10";
-		String e = "20";
+		//String 변수선언
+		String su1="10";
+		String su2="20";
 		
-		System.out.println(d + " + " + e + " = " + (d+e));
-		// String 타입을 int타입으로 변경하려면
-		//Integer.paresInt("1") = 문자열 1이 정수 1로 변환
-		//Double.parseDouble("12.5") = 문자열 12.5이 실수 12.5로 반환
+		System.out.println(su1+"+"+su2+"="+(su1+su2));
 		
-		int f = Integer.parseInt(d) + Integer.parseInt(e);
-		
-		
-		System.out.println(d + " + " + e + " = " + f);
-		
+		//String 타입을 int타입으로 변경하려면
+		//Integer.parseInt("1")    : 문자열1이 정수1로 반환
+		//Double.parseDouble("12.5")  : 문자열 12.5가 실수타입12.5로 반환
+
 	}
 
 }

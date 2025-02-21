@@ -1,29 +1,29 @@
 package day0219;
 
 public class OperTest_02 {
-	
+
 	public static void main(String[] args) {
-		// 증감 연산자 ++ , --
+		// 증감연산자 ++,--
+		int a,b;
+		a=b=5;
 		
-		int a,b ;
-		a = b = 5;
-		
-		//단항일경우 앞에 붙이나 뒤에 붙이나 같다
-		
+		//단항일경우는 앞에 붙이나 뒤에붙이나 같다
 		++a; //원래 a에서 1증가
-		b++; //b = b+1;
+		b++; //b=b+1
 		
-		System.out.println("a = " + a +", b = " + b);
+		System.out.println("a="+a+", b="+b);//a=6 b=6
 		
-		//수식일 경우에는 전치, 후치가 결과값이 다르다.
+		//수식일경우에는 전치,후치가 결과값이 다른다
+		int m,n;
+		m=n=0;
+		a=b=5;
 		
-		int m, n;
-		m = n =0;
-		a= b= 5;
+		m=a++; //후치일경우에는 먼저 대입후 증가
+		System.out.println("m="+m+", a="+a); //m=5  a=6
 		
-		m = a++; // 후치일경우에는 먼저 대입후 증가
-		n = ++b; // 전치일경우에는 먼저 증가후 대입
-		System.out.println("m = " + m + ", a = " + a);
-		System.out.println("n = " + n + ", b = " + b);
+		n=++b;  //전치일경우에는 먼저 증가후 대입
+		System.out.println("n="+n+" ,b="+b); //n=6  b=6
+
 	}
+
 }
