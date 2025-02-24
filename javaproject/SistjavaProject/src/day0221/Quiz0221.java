@@ -13,7 +13,7 @@ public class Quiz0221 {
 			System.out.print("5개의 숫자를 입력하시오. ");
 			int num = Integer.parseInt(sc.nextLine());
 			
-			if (num >=0)
+			if (num > 0)
 				x++;
 			if (num < 0)
 				y++;
@@ -59,4 +59,3 @@ public class Quiz0221 {
 		quiz02 ();
 	}
 }
-123
