@@ -2,7 +2,7 @@ package day0220;
 
 import java.util.Scanner;
 
-public class EqualTest_03 {
+public class EqualTest_03_0000 {
 
 	public static void main(String[] args) {
 		// 문자열비교는 관계대명사로 하면 안되고 equals라는 메소드를 사용해서 비교한다
