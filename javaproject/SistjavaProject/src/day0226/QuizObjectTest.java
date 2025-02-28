@@ -6,7 +6,7 @@ public class QuizObjectTest {
 		
 		QuizObject.classname = "쌍용 교육센터 자바교육 4강의장";
 		
-		QuizObject c1 = new QuizObject();
+		QuizObject c1 = new QuizObject(); //객체생성
 		QuizObject c2 = new QuizObject();
 		
 		c1.stname2 = "손흥민";
