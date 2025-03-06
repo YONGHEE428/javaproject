@@ -1,5 +1,6 @@
 package day0305;
 
+import java.text.NumberFormat;
 import java.util.Scanner;
 
 class Company{
@@ -87,13 +88,15 @@ public class QuizClass {
 	//사원명	직급	기본급	수당	가족수당	세금	실수령액
 	public static void showTitle() {
 		System.out.println("사원명\t직급\t기본급\t수당\t가족수당\t세금\t실수령액");
+		System.out.println("=".repeat(50));
 	}
 	//한개의 사원데이타 출력
 	public static void wirteSawon(Company [] cm) {
 		QuizClass.showTitle();
+		NumberFormat nf = NumberFormat.getInstance();
 		for(Company c : cm)
-			System.out.println(c.getStaff() + "\t" + c.getPosition() + "\t" + c.getGibonPay() + "만원\t" + c.getSudangPay() + "만원\t" + c.GetFamSudang() +
-								"만원\t" + c.getTax() + "만원\t" + c.getNetPay() + "만원");
+			System.out.println(c.getStaff() + "\t" + c.getPosition() + "\t" + nf.format(c.getGibonPay()) + "만원\t" + nf.format(c.getSudangPay()) + "만원\t" + nf.format(c.GetFamSudang()) +
+								"만원\t" + nf.format(c.getTax()) + "만원\t" + nf.format(c.getNetPay()) + "만원");
 	}
 	
 	public static void main(String[] args) {
@@ -114,7 +117,7 @@ public class QuizClass {
 			cm[i].setPosition(sc.nextLine());
 			System.out.print(cm[i].getStaff() + "님의 가족수를 입력해주세요 : ");
 			cm[i].setFamSu(Integer.parseInt(sc.nextLine()));
-			System.out.println("------------------------------------------------------");
+			System.out.println("-".repeat(50));
 		}
 		System.out.println("\t\t*****이달의 월급*****");
 		QuizClass.wirteSawon(cm);
