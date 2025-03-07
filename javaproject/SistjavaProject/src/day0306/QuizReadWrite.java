@@ -21,7 +21,7 @@ public class QuizReadWrite {
 		num = Integer.parseInt(sc.nextLine());
 		return num;
 	}
-	
+//////////////////////////////////////////////////////////////////	
 	public void sangpumAdd() {
 		System.out.print("삼풍명 : ");
 		String name = sc.nextLine();
@@ -48,6 +48,7 @@ public class QuizReadWrite {
 			}
 		}
 	}
+///////////////////////////////////////////////////////
 	public void sangpumDatas() {
 		System.out.println("\t\t*****상품전체 입고현황*****");
 		System.out.println("번호\t상품명\t수량\t단가\t금액\t할인\t총금액");
@@ -92,7 +93,7 @@ public class QuizReadWrite {
 			}
 		}
 	}
-	
+//////////////////////////////////////////////////////////////////////	
 	public static void main(String[] args) {
 		QuizReadWrite q = new QuizReadWrite();
 		
@@ -108,7 +109,8 @@ public class QuizReadWrite {
 			if(num == 9) {
 				System.out.println("종료합니다.");
 				break;
-			}
+			}else
+				System.out.println("번호를 다시 입력하세요.");
 	}
 
 }
