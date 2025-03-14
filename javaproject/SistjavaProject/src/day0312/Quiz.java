@@ -14,6 +14,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JRadioButton;
 import javax.swing.border.LineBorder;
+import javax.swing.border.TitledBorder;
 
 public class Quiz  extends JFrame implements ActionListener,ItemListener{
 
@@ -84,7 +85,7 @@ public class Quiz  extends JFrame implements ActionListener,ItemListener{
 		label = new JLabel("이곳에서 출력이 됩니다.");
 		label.setBounds(50, 150, 700, 200);
 		label.setFont(new Font("고딕체",Font.PLAIN,28));
-		label.setBorder(new LineBorder(Color.black,2));
+		label.setBorder(new LineBorder(Color.RED,2));
 		label.setHorizontalAlignment(JLabel.CENTER);
 		label.setVerticalAlignment(JLabel.CENTER);
 		this.add(label);
