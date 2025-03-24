@@ -5,7 +5,7 @@ price number(10), shop_name varchar2(20), loc varchar2(20));
 
 ALTER TABLE foodmenu MODIFY shop_name varchar2(30);
 
-insert into foodmenu values ( seq_food.nextval, '알리오 올리오', 15000,'쏘렌토','역삼역 2번출구');
+insert into foodmenu values ( seq_food.nextval, '알리오올리오', 15000,'쏘렌토','역삼역 2번출구');
 insert into foodmenu values ( seq_food.nextval, '치즈돈까스', 9000,'맛나 돈까스','역삼역지하상가');
 insert into foodmenu values ( seq_food.nextval, '순대국', 10000,'왕할머니순대국','강남역1번출구');
 insert into foodmenu values ( seq_food.nextval, '짜장면', 8000,'칭따오','역삼역4번출구');
